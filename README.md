@@ -202,6 +202,9 @@ My focus: **shipping fast**, automating real-world workflows, and building tools
   <a href="https://pideai.com">
     <img src="https://img.shields.io/badge/PideAI-0F172A?style=for-the-badge&logo=whatsapp&logoColor=22D3EE" />
   </a>
+    <a href="https://www.linkedin.com/in/knaimero">
+    <img src="https://img.shields.io/badge/linkendin-knaimero-0F172A?style=for-the-badge&logo=linkedin&logoColor=22D3EE" />
+  </a>
 </p>
 
 <p align="center">
