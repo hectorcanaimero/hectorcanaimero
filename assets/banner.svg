@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Héctor Rodríguez Velásquez — Full-Stack Engineer and SaaS Founder">
+  <defs>
+    <!-- Main gradient background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Accent gradient (cyan to violet) -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <!-- Sun/horizon gradient -->
+    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCD34D" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#F59E0B" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft glow for text -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bgGrad)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+
+  <!-- Decorative sun/horizon (right side) -->
+  <circle cx="1050" cy="160" r="180" fill="url(#sunGrad)"/>
+
+  <!-- Mountain silhouettes (LATAM Andes nod) -->
+  <path d="M 0 280 L 100 220 L 180 250 L 280 200 L 380 240 L 480 210 L 580 250 L 680 220 L 780 240 L 880 200 L 980 240 L 1080 210 L 1200 240 L 1200 320 L 0 320 Z"
+        fill="#0F172A" opacity="0.6"/>
+  <path d="M 0 290 L 80 250 L 160 270 L 240 240 L 340 260 L 420 235 L 520 265 L 620 245 L 720 270 L 800 240 L 900 265 L 980 245 L 1080 270 L 1200 250 L 1200 320 L 0 320 Z"
+        fill="#1E293B" opacity="0.8"/>
+
+  <!-- Floating tech dots (constellation effect) -->
+  <g opacity="0.6">
+    <circle cx="120" cy="80" r="2" fill="#22D3EE">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="50" r="1.5" fill="#A78BFA">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="90" r="2" fill="#22D3EE">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="40" r="1.5" fill="#38BDF8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="70" r="2" fill="#A78BFA">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="100" r="1.5" fill="#22D3EE">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="60" r="2" fill="#38BDF8">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Code brackets decorative (left) -->
+  <text x="60" y="180" font-family="JetBrains Mono, Consolas, monospace" font-size="120"
+        fill="url(#accentGrad)" opacity="0.15" font-weight="700">{</text>
+  <text x="1080" y="180" font-family="JetBrains Mono, Consolas, monospace" font-size="120"
+        fill="url(#accentGrad)" opacity="0.15" font-weight="700">}</text>
+
+  <!-- Main name -->
+  <text x="600" y="115" font-family="Inter, -apple-system, sans-serif" font-size="44"
+        font-weight="800" fill="#F1F5F9" text-anchor="middle" filter="url(#softGlow)" letter-spacing="-1">
+    Héctor Rodríguez Velásquez
+  </text>
+
+  <!-- Handle / username -->
+  <text x="600" y="148" font-family="JetBrains Mono, Consolas, monospace" font-size="18"
+        font-weight="500" fill="#22D3EE" text-anchor="middle" letter-spacing="2">
+    @hectorcanaimero
+  </text>
+
+  <!-- Divider line with gradient -->
+  <line x1="450" y1="170" x2="750" y2="170" stroke="url(#accentGrad)" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Tagline -->
+  <text x="600" y="200" font-family="Inter, -apple-system, sans-serif" font-size="18"
+        font-weight="400" fill="#CBD5E1" text-anchor="middle" letter-spacing="0.5">
+    Full-Stack Engineer · SaaS Founder · LATAM Retail Tech
+  </text>
+
+  <!-- Tech chips row -->
+  <g font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="600">
+    <!-- Next.js chip -->
+    <rect x="380" y="225" width="70" height="24" rx="12" fill="#0F172A" stroke="#22D3EE" stroke-width="1" opacity="0.9"/>
+    <text x="415" y="241" fill="#22D3EE" text-anchor="middle">Next.js</text>
+
+    <!-- Supabase chip -->
+    <rect x="460" y="225" width="80" height="24" rx="12" fill="#0F172A" stroke="#3FCF8E" stroke-width="1" opacity="0.9"/>
+    <text x="500" y="241" fill="#3FCF8E" text-anchor="middle">Supabase</text>
+
+    <!-- React Native chip -->
+    <rect x="550" y="225" width="100" height="24" rx="12" fill="#0F172A" stroke="#61DAFB" stroke-width="1" opacity="0.9"/>
+    <text x="600" y="241" fill="#61DAFB" text-anchor="middle">React Native</text>
+
+    <!-- Flutter chip -->
+    <rect x="660" y="225" width="65" height="24" rx="12" fill="#0F172A" stroke="#54C5F8" stroke-width="1" opacity="0.9"/>
+    <text x="692.5" y="241" fill="#54C5F8" text-anchor="middle">Flutter</text>
+
+    <!-- AI chip -->
+    <rect x="735" y="225" width="85" height="24" rx="12" fill="#0F172A" stroke="#A78BFA" stroke-width="1" opacity="0.9"/>
+    <text x="777.5" y="241" fill="#A78BFA" text-anchor="middle">AI Agents</text>
+  </g>
+
+  <!-- Bottom motto -->
+  <text x="600" y="285" font-family="Inter, -apple-system, sans-serif" font-size="13"
+        font-style="italic" fill="#64748B" text-anchor="middle" letter-spacing="1">
+    "Ao infinito e além..." — Built in LATAM, for LATAM.
+  </text>
+
+  <!-- Top-left flag indicators -->
+  <g font-family="Inter, sans-serif" font-size="12" fill="#94A3B8">
+    <text x="40" y="40" letter-spacing="1">🇧🇷 BR · 🇻🇪 VE</text>
+  </g>
+
+  <!-- Top-right time/status -->
+  <g font-family="JetBrains Mono, monospace" font-size="11" fill="#22D3EE" opacity="0.7">
+    <circle cx="1100" cy="36" r="4" fill="#22D3EE">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1112" y="40">UTC-03 · BUILDING</text>
+  </g>
+</svg>
